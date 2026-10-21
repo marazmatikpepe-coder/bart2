@@ -97,5 +97,11 @@
 <script src="purify.min.js"></script>
 <script src="highlight.min.js"></script>
 <script type="module" src="js/app.js"></script>
+<script>
+/* Логотип: сразу показываем встроенный logo.svg, затем подменяем вашим логотипом с imgbb, если он доступен (≤4 с). Без VPN в закрытых сетях остаётся встроенный. */
+(function(){var U='https://i.ibb.co/1pCX2Nr/image-Photoroom.png',im=new Image(),t=setTimeout(function(){im.onload=im.onerror=null},4000);
+ im.onload=function(){clearTimeout(t);[].forEach.call(document.querySelectorAll('img[src="logo.svg"]'),function(e){e.src=U});var l=document.querySelector('link[rel~=icon]');if(l)l.href=U};
+ im.src=U})();
+</script>
 </body>
 </html>
